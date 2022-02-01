@@ -1,6 +1,7 @@
 /*  flex-direction: row-reverse;
     flex-direction: column;
-_____________________________________________________________________________________
+    float, clear, and vertical-align DO NOT work on flex items.
+    _____________________________________________________________________________________
     justify-content: start;
     flex-start: aligns items to the start of the flex container. 
     For a row, this pushes the items to the left of the container. 
@@ -199,6 +200,7 @@ The different values available for align-items include:
 
 #base-box03 {
     background-color: rgb(92, 132, 241);
+    
 }
 
 #base-box04 {
@@ -284,7 +286,115 @@ items and the size of the container.
 }
 
 #box-6 {
-    background-color: black;
+    background-color: rgb(99, 214, 243);
     width: 25%;
     height: 100px;
+  }
+
+  /* FLEX SHRINK */
+
+.shrink {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+#box-shrink1 {
+    background-color: rgb(101, 243, 243);
+    width: 100%;
+    flex-shrink: 1;
+}
+
+#box-shrink2 {
+    background-color: rgb(238, 236, 118);
+    width: 100%;
+    flex-shrink: 2;
+}
+
+#box-shrink3 {
+    background-color: rgb(172, 83, 231);
+    width: 100%;
+    flex-shrink:3;
+}
+
+.grow {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+
+#box-grow1 {
+    background-color: rgb(101, 243, 243);
+    flex-grow: 1;
+}
+
+#box-grow2 {
+    background-color: rgb(238, 236, 118);
+    flex-grow: 2;
+}
+
+#box-grow3 {
+    background-color: rgb(172, 83, 231);
+    flex-grow:3;
+}
+
+/* flex-basis */
+
+.box-basis-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 50px;
+  }
+
+  #boxbasis-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-basis: 10em;
+    order: 4;
+  }
+
+  #boxbasis-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-basis: 20em;
+    order: 2;
+  }
+
+  #boxbasis-3 {
+    background-color: yellow;
+    height: 200px;
+    flex-basis: 30em;
+    order: 1;
+  }
+
+  #boxbasis-4 {
+    background-color: green;
+    height: 200px;
+    flex-basis: 40em;
+    order: 3;
+  }
+
+  /* ALIGN SELF */
+
+  #box-self-container {
+    display: flex;
+    height: 500px;
+    background-color: grey;
+    }
+
+  #boxself-1 {
+    background-color: dodgerblue;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  #boxself-2 {
+    background-color: orangered;
+    align-self: flex-end;
+    height: 200px;
+    width: 200px;
   }
