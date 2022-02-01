@@ -1,0 +1,109 @@
+/* height: does not work if in parent element;
+    flex-direction: row-reverse;
+    flex-direction: column;
+_____________________________________________________________________________________
+    justify-content: start;
+    flex-start: aligns items to the start of the flex container. 
+    For a row, this pushes the items to the left of the container. 
+    For a column, this pushes the items to the top of the container. 
+    This is the default alignment if no justify-content is specified.
+_____________________________________________________________________________________
+    justify-content: end;
+    flex-end: aligns items to the end of the flex container. 
+    For a row, this pushes the items to the right of the container. 
+    For a column, this pushes the items to the bottom of the container.
+_____________________________________________________________________________________    
+    justify-content: space-evenly;
+    space-evenly: Distributes space evenly between the flex items with a full 
+    space at either end of the flex container
+_____________________________________________________________________________________    
+    justify-content: space-between;
+    space-between: aligns items to the center of the main axis, 
+    with extra space placed between the items. 
+    The first and last items are pushed to the very edge of the flex container. 
+    For example, in a row the first item is against the left side of the container, 
+    the last item is against the right side of the container, 
+    then the remaining space is distributed evenly among the other items.
+___________________________________________________________________________________    
+    justify-content: space-around;
+    space-around: similar to space-between but the first and last items are not
+    locked to the edges of the container, the space is distributed around all the
+    items with a half space on either end of the flex container.
+___________________________________________________________________________________    
+    justify-content: center; 
+    center: which aligns all the flex items to the center inside the flex container. 
+    Other options include:
+    */
+
+p {
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+    border-top-style:solid;
+}
+
+.flex-box01  {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: start; 
+}
+
+.flex-box06 {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex-box02 {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.flex-box03 {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flex-box04 {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-box05 {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#box01 {
+    background-color: rgb(219, 85, 85);
+    height: 50px;
+    width: 25%;
+}
+
+#box02 {
+    background-color: rgb(101, 101, 216);
+    height: 100px;
+    width: 25%;
+}
+
+#box03 {
+    background-color: rgb(93, 197, 93);
+    height: 150px;
+    width: 25%;
+}
+
+#box04 {
+    background-color: rgb(231, 114, 221);
+    height: 200px;
+    width: 10%;
+}
