@@ -1,5 +1,4 @@
-/* height: does not work if in parent element;
-    flex-direction: row-reverse;
+/*  flex-direction: row-reverse;
     flex-direction: column;
 _____________________________________________________________________________________
     justify-content: start;
@@ -84,6 +83,68 @@ p {
     justify-content: space-around;
 }
 
+
+/*
+
+The different values available for align-items include:
+
+    flex-start: aligns items to the start of the flex container. For rows, this aligns items to the top of the container. 
+    For columns, this aligns items to the left of the container.
+
+    flex-end: aligns items to the end of the flex container. For rows, this aligns items to the bottom of the container. 
+    For columns, this aligns items to the right of the container.
+    
+    center: align items to the center. For rows, this vertically aligns items (equal space above and below the items). 
+    For columns, this horizontally aligns them (equal space to the left and right of the items).
+    
+    stretch: stretch the items to fill the flex container. For example, rows items are stretched to fill the flex container top-to-bottom. 
+    This is the default value if no align-items value is specified.
+    
+    baseline: align items to their baselines. Baseline is a text concept, think of it as the line that the letters sit on.
+
+*/
+.flex-box07 {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flex-box08 {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex-box09 {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box10 {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 200px;
+}
+
+.flex-box11 {
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    height: 200px;
+}
+
 #box01 {
     background-color: rgb(219, 85, 85);
     height: 50px;
@@ -106,4 +167,42 @@ p {
     background-color: rgb(231, 114, 221);
     height: 200px;
     width: 10%;
+}
+
+#stretch-box01 {
+    background-color: rgb(212, 224, 99); 
+}
+
+#stretch-box02 {
+    background-color: rgb(98, 223, 109); 
+}
+
+#stretch-box03 {
+    background-color: rgb(96, 156, 233); 
+}
+
+#stretch-box04 {
+    background-color: rgb(236, 83, 95); 
+}
+
+#base-box01 {
+    background-color: rgb(241, 149, 115);
+}
+
+#base-box02 {
+    background-color: rgb(240, 215, 105);
+}
+
+#base-box03 {
+    background-color: rgb(92, 132, 241);
+}
+
+#base-box04 {
+    background-color: rgb(223, 114, 217);
+}
+
+.align-div {
+    border: 3px solid black;
+    margin-top: 400px;
+    font-size: 10px;
 }
